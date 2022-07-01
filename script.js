@@ -104,16 +104,7 @@ function startgame(){
             startgame()
         }
     }, 100);
-    /*
-    for (i = 1; i <= gens.value; i ++){        
-        var stop = setInterval(function(){
-            
-        }, 500)
-        if (i == gens.value){
-            clearInterval(stop) 
-            console.log('test')
-        }
-    */
+    
 }
    
 
