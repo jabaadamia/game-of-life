@@ -74,14 +74,6 @@ function clearboard(){
     cellstoborn = []
     cellstokill = []
 }
-/*
-function isclear(){
-    console.log(objlist)
-    objlist.forEach(cell => {
-        if(cell.isdead == false){return false}
-    });
-    return true
-}*/
 
 var i = 1
 function startgame(){
@@ -153,7 +145,6 @@ function liveneigbours(cell){
         if (!objlist[neighbour].isdead){
             ln = ln + 1 
         }
-        //console.log(objlist[neighbour])
     });
     
     if (!cell.isdead && ln < 2){cellstokill.push(cell)}
