@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #container{
+                position: absolute;
+                left: 50%;
+                top: 20px;
+                transform: translateX(-50%);
+            }
+            #bigdiv {
+               width: 600px;
+               height: 600px;
+               display: flex;
+               flex-wrap: wrap;
+            }
+            .wall {
+                animation-name: drawanimation;
+                animation-duration: 0.1;
+            }
+            @keyframes drawanimation{
+                0% {
+                    transform: scale(0.3);
+                    background-color: black;
+                }
+                50% {
+                    transform: scale(1.2);
+                    background-color: black;
+                }
+                100% {
+                    transform: scale(1);
+                    background-color: black;
+                }
+            }
+        </style>        
+        
+    </head>
+    <body>
+        <div id="container">
+            <div id="bigdiv" onclick="clickfunc(event)" onmouseover="hover(event)">
+
+            </div>
+            <button onclick="erease()">ereaser</button>
+            <button onclick="stopereasing()">draw</button>
+            <button onclick="startgame()">start</button>
+            <button onclick="clearboard()">clear</button>
+            <input type="number" placeholder="enter num of generations" id="gens">
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
